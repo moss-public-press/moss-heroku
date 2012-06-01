@@ -63,7 +63,7 @@ h2 {
 }
 
 ul.inline {
-  margin: 0 auto;
+  margin: 18px auto 0 auto;
   display: block;
   height: 20px;
   float: none;
@@ -87,10 +87,7 @@ div#main div.content {
 /* all ready for you */
 @media only screen and (min-width: 480px) {
 
-  ul.inline {
-    margin: 18px auto 0 auto;
-    
-  }
+
   
 
   
@@ -104,6 +101,17 @@ div#main div.content {
 }
 
 @media only screen and (min-width: 768px) {
+  
+  h1.site-name {
+    margin: 0;
+    float: left;
+  }
+  
+  ul.inline {
+    margin: 18px 0 0 0;
+    float: right;
+    clear: none;
+  }
   
 }
 

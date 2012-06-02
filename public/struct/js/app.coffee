@@ -6,4 +6,3 @@ $ ->
     afterScroll: null
     easing: 'swing'
     speed: 400
-      

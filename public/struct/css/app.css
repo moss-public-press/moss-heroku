@@ -11,9 +11,19 @@ h1, h2, h3 {
   font-family: "adelle",sans-serif;
 }
 
+h4, h5, h6 {
+  font-family: "prenton", sans-serif;
+}
+
 h1 {
   font-size: 20px;
   line-height: 30px;
+}
+
+h5 {
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 5px;
 }
 
 header.container {
@@ -137,6 +147,16 @@ form.tinyletter input[type="submit"] {
   
 }
 
+div.tumblr-blog {
+  margin-top: 30px;
+}
+
+div.tumblr-blog h3 {
+  font-size: 30px;
+  font-family: "prenton", serif;
+  text-transform: uppercase;
+}
+
 li.tumblr_post {
   background-color: #fff;
   padding: 20px;
@@ -148,7 +168,9 @@ li.tumblr_post {
 }
 
 div.tumblr_title {
-  font-size: 20px;
+  font-size: 30px;
+  font-family: "adelle",sans-serif;
+  font-weight: 700;
   font-weight: 700;
 }
 

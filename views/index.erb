@@ -1,10 +1,50 @@
 <div class="hero">
   <img src="/struct/img/moss_hero.jpg" width="100%"/>
-  <div class="eleven columns">
-    <h2>Welcome to Moss Public Press.</h2>
+  <div class="title eleven columns">
+    <h4 class="goudy">news. storytelling. community. technology.</h4>
+    <h2>Moss Public Press.</h2>
   </div>
-  <div class="four columns">
-    <h3>This is some sidebar stuff.</h3>
-    <p>this is some stuff. this is some stuff. this is some stuff.</p>
+  <div class="services four columns">
+    <h3>Sign up for our weekly newsletter.</h3>
+    <form class="tinyletter" action="https://tinyletter.com/mosspublicpress" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mosspublicpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">enter your email address:</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
+  </div>
+</div>
+<div class="row" style="margin-top:20px;">
+  <div class="three columns">
+    <p>some stuff</p>
+  </div>
+  <div class="seven columns">
+    <p>some stuff</p>
+    
+  </div>
+  <div class="six columns">
+    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 5,
+      interval: 30000,
+      width: 'auto',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#fafafa',
+          color: '#8f8f8f'
+        },
+        tweets: {
+          background: '#ffffff',
+          color: '#8c8c8c',
+          links: '#7990bd'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: true,
+        behavior: 'all'
+      }
+    }).render().setUser('mosspublicpress').start();
+    </script>
   </div>
 </div>

@@ -80,13 +80,42 @@ div#main div.content {
   padding: 0;
 }
 
+div.title {
+  color: #fff;
+  margin-top: -80px !important;
+  position: absolute;
+}
+
+div.columns.services {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+}
+
+div.services h3{
+  font-weight: 700;
+  color: #f444;
+  font-size: 22px;
+  text-align: center;
+}
+
+h4.goudy {
+  font-style: italic;
+}
+
 div.hero img {
   background-color: #fff;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #c3c3c3;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
+}
+
+form.tinyletter {
+  font-size: 10px;
+  color: #666;
+  text-align: center;
 }
 
 
@@ -117,6 +146,31 @@ div.hero img {
     margin: 18px 0 0 0;
     float: right;
     clear: none;
+  }
+  
+  div.columns.services {
+    background-color: rgba(30, 30, 30, .2);
+    padding: 20px;
+    float: right;
+    margin-top: -300px !important;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+  }
+  
+  div.services h3{
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  form.tinyletter {
+    font-size: 10px;
+    color: #eee;
+  }
+
+  form.tinyletter a {
+    color: #666;
   }
   
 }

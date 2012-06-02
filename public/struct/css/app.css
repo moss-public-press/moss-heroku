@@ -76,12 +76,17 @@ ul.inline li {
 }
 
 div#main div.content {
+  margin-top: 30px;
+  padding: 0;
+}
+
+div.hero img {
   background-color: #fff;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   border: 1px solid #e1e1e1;
-  margin-top: 50px;
-  padding: 20px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 

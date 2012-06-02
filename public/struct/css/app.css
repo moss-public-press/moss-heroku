@@ -82,14 +82,17 @@ div#main div.content {
 
 div.title {
   color: #fff;
+  text-align: center;
   margin-top: -80px !important;
-  position: absolute;
+  
+}
+
+div.title h2 {
+  font-size: 30px;
 }
 
 div.columns.services {
-  padding: 20px;
-  position: absolute;
-  right: 0;
+  padding-top: 20px;
 }
 
 div.services h3{
@@ -122,13 +125,6 @@ form.tinyletter {
 /* all ready for you */
 @media only screen and (min-width: 480px) {
 
-
-  
-
-  
-  h1.site-name a {
-    
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -146,6 +142,13 @@ form.tinyletter {
     margin: 18px 0 0 0;
     float: right;
     clear: none;
+  }
+  
+  div.title {
+    color: #fff;
+    margin-top: -80px !important;
+    position: absolute;
+    text-align: left;
   }
   
   div.columns.services {

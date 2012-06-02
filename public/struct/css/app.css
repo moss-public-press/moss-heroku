@@ -84,11 +84,14 @@ div.title {
   color: #fff;
   text-align: center;
   margin-top: -80px !important;
-  
 }
 
 div.title h2 {
-  font-size: 30px;
+  font-size: 28px;
+}
+
+div.title h4 {
+  font-size: 13px;
 }
 
 div.columns.services {
@@ -226,6 +229,18 @@ form.tinyletter input[type="submit"] {
 /* all ready for you */
 @media only screen and (min-width: 480px) {
 
+  div.columns.title {
+    color: #fff;
+    text-align: center;
+    margin-top: -80px;
+    float: none;
+    display: block;
+  }
+  
+  div.columns.title h2 {
+    font-size: 35px;
+  }
+  
   div.services h3 {
     padding: 0 100px;
   }
@@ -233,9 +248,14 @@ form.tinyletter input[type="submit"] {
 }
 
 @media only screen and (min-width: 600px) {
+  
+  div.columns.title h2 {
+  }
+  
   div.services h3 {
     padding: 0;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,11 +275,10 @@ form.tinyletter input[type="submit"] {
     clear: none;
   }
   
-  div.title {
-    color: #fff;
-    margin-top: -80px !important;
+  div.columns.title {
     position: absolute;
     text-align: left;
+    float: left;
   }
   
   div.columns.services {

@@ -171,6 +171,7 @@ li.tumblr_post {
   border: 1px solid #c3c3c3;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
+  margin-bottom: 25px;
 }
 
 div.tumblr_title {

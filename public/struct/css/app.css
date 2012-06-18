@@ -153,6 +153,29 @@ form.tinyletter input[type="submit"] {
   
 }
 
+form#contact input.text {
+  height: 25px;
+  border: 1px solid #ccc;
+  margin: 0 0 5px 0;
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+}
+
+form#contact textarea {
+  height: 50px;
+  border: 1px solid #ccc;
+  margin: 0 0 5px 0;
+  padding: 5px;
+  font-size: 15px;
+  width: 100%;
+}
+
+form#contact label {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
 div.tumblr-blog {
   margin-top: 30px;
 }

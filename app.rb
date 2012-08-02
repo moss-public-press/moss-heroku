@@ -17,7 +17,7 @@ class App < Sinatra::Base
     if File.exists?('views/'+params[:page]+'.erb')
       erb params[:page].to_sym
     else 
-      flash[:notice] = "huh. whatever you were lokking for doesn't exist"
+      flash[:notice] = "huh. whatever you were looking for doesn't exist"
       redirect '/'
     end   
   end
@@ -41,6 +41,7 @@ class App < Sinatra::Base
           :domain               => ENV['SENDGRID_DOMAIN']
         })
       flash[:notice] = "Oh! Thanks for the email, bud!"
+      redirect '/'
   end
   
 end

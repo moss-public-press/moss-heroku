@@ -7,11 +7,17 @@ a {
   color: #7990BD; /* 37DB00*/
 }
 
+strong, b {
+  font-weight: 900;
+}
+
+em, i {
+  font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6  {
   font-family: "prenton", serif;
   font-weight: 100;
-  text-shadow: 1px 1px 1px #ededed;
-  filter: dropshadow(color=#ededed, offx=1, offy=1);
 }
 
 h1 {
@@ -36,6 +42,7 @@ h3 {
 h4 {
   font-size: 15px;
   margin-top: 8px;
+  font-weight: 500;
 }
 
 h5 {
@@ -46,9 +53,10 @@ h5 {
 
 h1.site-name {
   top: 0px;
-  font-family: "sorts-mill-goudy", serif;
-  float: left;
-  
+  font-family: "sorts-mill-goudy", serif;  
+  text-align: center;
+  margin: 0 auto;
+  width: 170px;
 }
 
 h1.site-name a {
@@ -79,31 +87,28 @@ header h4 {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 5px;
-  text-align:right; 
-  width: 300px;
-  float:right;
-  position: static;
+  text-align: center; 
+  float:none;
   margin-top: -5px;
   text-shadow: none;
   filter: none;
   color: #ccc;
+  clear: both;
+  margin: 10px auto 10px auto;
 }
 
 header h5 {
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 5px;
-  text-align:right; 
-  width: 300px;
-  float:right;
-  position: static;
-  margin-top: -5px;
-  clear: right;
+  text-align: center; 
+  float:none;
+  clear: both;
+  margin: -5px auto 5px auto;
 }
 
 header {
   display: block;
-  height: 70px;
+  height: 170px;
   padding-top: 20px;
   margin: 0px 20px;
 }
@@ -134,7 +139,7 @@ div.oh-hi {
   background: rgba(0, 0, 0, 0.2);
   height: 250px;
   width: 100%;
-  text-align: right;
+  text-align: center;
   display: block;
   color: #fff;
 }
@@ -142,15 +147,19 @@ div.oh-hi {
 div.oh-hi h2, div.oh-hi h3 {
   text-shadow: none;
   filter: none;
+  text-align: center;
+}
+
+div.oh-hi h2 {
+  font-size: 18px;
 }
 
 div.oh-hi h3 {
   font-family: "prenton", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 9px;
   line-height: 20px;
   margin: 10px 0;
-  text-align: justify-right;
 }
 
 form.tinyletter {
@@ -166,7 +175,7 @@ form.tinyletter input#tlemail {
   font-size: 15px;
   font-family: "prenton", sans-serif;
   font-weight: 100;
-  width: 200px;
+  width: 100px;
 }
 
 form.tinyletter input[type="submit"] {
@@ -236,41 +245,6 @@ div.columns.title {
   text-align: center;
   margin-top: -80px;
 }
-
-
-div.tumblr-blog {
-  margin-top: 30px;
-}
-
-div.tumblr-blog h3 {
-  font-size: 30px;
-  font-family: "prenton", serif;
-  text-transform: uppercase;
-}
-
-li.tumblr_post {
-  background-color: #fff;
-  padding: 20px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  border: 1px solid #c3c3c3;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  margin-bottom: 25px;
-}
-
-div.tumblr_title {
-  font-size: 30px;
-  font-family: "adelle",sans-serif;
-  font-weight: 700;
-  font-weight: 700;
-}
-
-div.tumblr_body img {
-  width: 100%;
-}
-
-
 
 .btn {
   height: 37px;
@@ -364,6 +338,8 @@ div.tumblr_body img {
 
 /* all ready for you */
 @media only screen and (min-width: 480px) {
+  
+
 
   div.columns.title {
     color: #fff;
@@ -385,74 +361,57 @@ div.tumblr_body img {
 
 @media only screen and (min-width: 600px) {
   
-  div.columns.title h2 {
+  h1.site-name {
+    float: left;
+    text-align: left;
   }
   
-  div.services h3 {
-    padding: 0;
+  header {
+    height: 70px;
+  }
+  
+  header h4, header h5 {
+    float: right;
+    text-align: right;
+    position: static;
+    clear: none;
+    width: 300px;
+    margin: 0;
+  }
+  
+  header h4 {
+    margin-top: -5px;
+  }
+  
+  header h5 {
+    clear: right;
+  }
+  
+  div.oh-hi {
+    text-align: right;
+  }
+  
+  div.oh-hi h2 {
+    text-align: right;
+    font-size: 30px;
+  }
+  
+  div.oh-hi h3 {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  form.tinyletter input#tlemail {
+    width: 200px;
   }
   
 }
 
 @media only screen and (min-width: 768px) {
   
-  div.services h3 {
-    font-size: 18px;
-  }
-  
-  ul.inline {
-    margin: 18px 0 0 0;
-    float: right;
-    clear: none;
-  }
-  
-  div.columns.title {
-    position: absolute;
-    text-align: left;
-    float: left;
-  }
-  
-  div.columns.services {
-    background-color: rgba(30, 30, 30, .2);
-    padding: 20px;
-    float: right;
-    margin-top: -250px !important;
-    margin-right: 50px;
-    position: absolute;
-    right: 0;
-  }
-  
-  div.services h3{
-    font-weight: 700;
-    color: #fff;
-  }
-  
-  form.tinyletter {
-    font-size: 10px;
-    color: #eee;
-  }
-
-  form.tinyletter a {
-    color: #666;
-  }
-  
 }
 
 @media only screen and (min-width: 960px) {
-  
-  div.columns.services {
-    background-color: rgba(30, 30, 30, .2);
-    padding: 20px;
-    float: right;
-    margin-top: -265px !important;
-    margin-right: 50px;
-    position: absolute;
-    right: 0;
-  }
-  
-  div.services h3 {
-    font-size: 22px;
-  }
   
 }
 

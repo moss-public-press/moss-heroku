@@ -26,7 +26,7 @@ class App < Sinatra::Base
       require 'pony'
        Pony.mail(
         :from => params[:name] + "<" + params[:email] + ">",
-        :to => 'sethvincent@gmail.com',
+        :to => 'info@mosspublicpress.com',
         :subject => params[:name] + " has contacted you",
         :body => params[:message],
         :port => '587',

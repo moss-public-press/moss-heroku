@@ -7,18 +7,30 @@ a {
   color: #7990BD; /* 37DB00*/
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6  {
   font-family: "prenton", serif;
-  font-weight: 500;
-}
-
-h4, h5, h6 {
-  font-family: "prenton", sans-serif;
+  font-weight: 100;
+  text-shadow: 1px 1px 1px #ededed;
+  filter: dropshadow(color=#ededed, offx=1, offy=1);
 }
 
 h1 {
   font-size: 20px;
   line-height: 30px;
+}
+
+h2 {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-family: "sorts-mill-goudy", serif;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 h4 {
@@ -32,34 +44,11 @@ h5 {
   margin-bottom: 5px;
 }
 
-header {
-  z-index: 1000;
-  position: static;
-  background-image: url("../img/moss.jpg");
-  height: 250px;
-}
-
-header.container {
-  margin: 0 auto;
-}
-
-div.main-inside {
-  background-color: #fff;
-  padding: 20px;
-  -webkit-border-radius: 0px 0px 3px 3px;
-  border-radius: 0px 0px 3px 3px;
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
-
-div#main {
-}
-
 h1.site-name {
-  margin: 0 auto 0 auto;
-  position: static;
   top: 0px;
+  font-family: "sorts-mill-goudy", serif;
+  float: left;
+  
 }
 
 h1.site-name a {
@@ -69,14 +58,10 @@ h1.site-name a {
   display: block;
   letter-spacing: -1px;
   color: #333;
-  text-align: center;
   font-size: 27px;
-  padding: 20px 0px 0px 0px;
-  text-shadow: 1px 1px 1px #ccc;
-  filter: dropshadow(color=#ccc, offx=1, offy=1);
+  text-shadow: 1px 1px 1px #ededed;
+  filter: dropshadow(color=#ededed, offx=1, offy=1);
   width: 170px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 h1.site-name a:hover {
@@ -88,79 +73,89 @@ h1.site-name a span.big {
   margin-bottom: -30px;
 }
 
-h2 {
-  font-style: normal;
-  font-size: 40px;
-  line-height: 45px;
-  letter-spacing: -1px;
-  text-shadow: 1px 1px 1px #aaa;
-  filter: dropshadow(color=#aaa, offx=1, offy=1);
-}
-
-h5.oh-hi {
-  text-align:center; 
-  width:100%;
-  margin-top:20px;
-}
-
-ul.inline {
-  margin: 18px auto 0 auto;
-  display: block;
-  height: 20px;
-  float: none;
-  text-align: center;
-  clear: both;
-}
-ul.inline li {
-  float: none;
-  margin: 0 10px;
-}
-
-div#main div.content {
-  padding: 0;
-}
-
-div.columns.title {
-  color: #fff;
-  text-align: center;
-  margin-top: -80px;
-}
-
-div.title h2 {
-  font-size: 28px;
-}
-
-div.title h4 {
-  font-size: 13px;
-}
-
-div.columns.services {
-  padding-top: 20px;
-}
-
-div.services h3{
-  font-weight: 700;
-  color: #f444;
-  font-size: 25px;
-  text-align: center;
-  padding: 0 30px;
-}
-
-h4.goudy {
+header h4 {
+  font-family: "sorts-mill-goudy", serif;
   font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-align:right; 
+  width: 300px;
+  float:right;
+  position: static;
+  margin-top: -5px;
+  text-shadow: none;
+  filter: none;
+  color: #ccc;
 }
 
-div.hero img {
+header h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  text-align:right; 
+  width: 300px;
+  float:right;
+  position: static;
+  margin-top: -5px;
+  clear: right;
+}
+
+header {
+  display: block;
+  height: 70px;
+  padding-top: 20px;
+  margin: 0px 20px;
+}
+
+div.inside {
+  padding: 0 20px;
+}
+
+div#main {
   background-color: #fff;
   -webkit-border-radius: 0px 0px 3px 3px;
   border-radius: 0px 0px 3px 3px;
-  border: 1px solid #ededed;
+  border-left: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+div.email-form {
+  height: 250px;
+  background: url("../img/moss.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div.oh-hi {  
+  background: rgba(0, 0, 0, 0.2);
+  height: 250px;
+  width: 100%;
+  text-align: right;
+  display: block;
+  color: #fff;
+}
+
+div.oh-hi h2, div.oh-hi h3 {
+  text-shadow: none;
+  filter: none;
+}
+
+div.oh-hi h3 {
+  font-family: "prenton", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0;
+  text-align: justify-right;
 }
 
 form.tinyletter {
   font-size: 10px;
   color: #666;
-  text-align: center;
 }
 
 form.tinyletter input#tlemail {
@@ -169,10 +164,14 @@ form.tinyletter input#tlemail {
   margin: 0 0 5px 0;
   padding: 5px;
   font-size: 15px;
+  font-family: "prenton", sans-serif;
+  font-weight: 100;
+  width: 200px;
 }
 
 form.tinyletter input[type="submit"] {
-  
+  font-family: "prenton", sans-serif;
+  font-weight: 100;
 }
 
 form#contact input.text {
@@ -197,6 +196,47 @@ form#contact label {
   font-size: 10px;
   text-transform: uppercase;
 }
+
+
+div.projects {
+  clear: both;
+}
+
+div.project {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ededed;
+  margin-bottom: 25px;
+}
+
+div.project ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+ul.inline {
+  margin: 18px auto 0 auto;
+  display: block;
+  height: 20px;
+  float: none;
+  text-align: center;
+  clear: both;
+}
+ul.inline li {
+  float: none;
+  margin: 0 10px;
+}
+
+div#main div.content {
+  padding: 0;
+}
+
+div.columns.title {
+  color: #fff;
+  text-align: center;
+  margin-top: -80px;
+}
+
 
 div.tumblr-blog {
   margin-top: 30px;
@@ -230,19 +270,22 @@ div.tumblr_body img {
   width: 100%;
 }
 
+
+
 .btn {
+  height: 37px;
   display: inline-block;
   *display: inline;
   padding: 4px 10px 4px;
   margin-bottom: 0;
-  *margin-left: .3em;
+  *margin-left: .5em;
   font-size: 13px;
   line-height: 18px;
   *line-height: 20px;
   color: #333333;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
+  vertical-align: top;
   cursor: pointer;
   background-color: #f5f5f5;
   *background-color: #e6e6e6;
@@ -258,9 +301,9 @@ div.tumblr_body img {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   *zoom: 1;

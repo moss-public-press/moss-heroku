@@ -1,82 +1,93 @@
 <div class="row">
-  <div class="sixteen columns">
-    <div class="main-inside">
-      <h1 class="site-name"><a href="/"><span class="big">moss</span><br> public press</a></h1>
-      <h5 class="oh-hi">Moss Public Press is a startup news & technology organization based in the Pacific Northwest.</h5>
-      <div class="row">
-        <div class="twelve columns">
-          <h3>our projects:</h3>
-          <h2>Moss Blog on Tumblr</h2>
-          <h2>OlyWiki.org & OlyNews.org</h2>
-          <h2>Makers of the Pacific Northwest</h2>
-
-        </div>
+  <div class="sixteen columns email-form">
+    <div class="oh-hi">
+      <div style="padding:30px 80px">
+      <h2>Moss Public Press is getting<br> started, and you can help.</h2>
+      <h3>Join the newsletter for updates on the full release<br> of mosspublicpress.com, project announcements, and<br> interesting news about the Pacific Northwest.</h3>
+      <form class="tinyletter" action="https://tinyletter.com/mosspublicpress" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mosspublicpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><input type="text"  name="email" id="tlemail" placeholder="enter your email" /><input type="hidden" value="1" name="embed"/><input class="btn" type="submit" value="Subscribe" /></form>
       </div>
     </div>
   </div>
-
-  <div class="four columns">
-    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-      version: 2,
-      type: 'profile',
-      rpp: 5,
-      interval: 30000,
-      width: 'auto',
-      height: 300,
-      theme: {
-        shell: {
-          background: '#ffffff',
-          color: '#8f8f8f'
-        },
-        tweets: {
-          background: '#ffffff',
-          color: '#8c8c8c',
-          links: '#7990bd'
-        }
-      },
-      features: {
-        scrollbar: false,
-        loop: false,
-        live: true,
-        behavior: 'all'
-      }
-    }).render().setUser('mosspublicpress').start();
-    </script>
-    <div class="clearfix" style="margin-bottom:50px;"></div>
-    <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmosspublicpress&amp;width=292&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23ccc&amp;stream=true&amp;header=false" scrolling="no" frameborder="0" style="border:none; background-color: #ffffff; overflow:hidden; width:100%; height:558px;" allowTransparency="true"></iframe>
-  
-    <h2 style="margin-top:40px;">Tell us everything.</h2>
-    <div class="center-box center-text">
-    	<p>Talk to us. Tell us everything we need to know.</p>
-    </div>
-    <form action="/" method="post" id="contact" class="center-box">
-      <label for="name">Your Name:</label>
-      <input class="text" type="text" name="name">
-      <label for="email">Your email:</label>
-      <input class="text" type="text" name="email">
-      <label  for="to">Your message:</label>
-      <textarea name="message"></textarea>
-      <input class="btn" type="submit" value="Send">
-    </form>
-    
-    <h3>Sign up for our weekly newsletter.</h3>
-    <form class="tinyletter" action="https://tinyletter.com/mosspublicpress" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/mosspublicpress', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">enter your email address:</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input class="btn" type="submit" value="Subscribe" /><p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p></form>
-  
-  </div>  
 </div>
-<hr />
-<div class="row" style="margin-top:20px;">
-  <div class="ten columns" id="about">
-    <h5>about moss public press:</h5>
-    <p><strong>The goals:</strong> make an awesome blog, experiment with apps that focus on telling stories, release compilations of our work as ebooks and print books, and work to build a community that encourages and supports curiousity and skepticism.</p>
-    <h4>get involved:</h4>
-    <p>Interested in joining up with Moss Public Press as a contributor? Let us know. There may be internships and other volunteer opportunities available starting in the summer.</p>
 
-    <h4>support our efforts:</h4>
-    <p>We’re currently defining the marketing & outreach services we’ll offer in conjunction with our publication. We’d be excited to talk with you about how we can help with your outreach campaigns.</p>
+<div class="row" style="padding-top:20px;">
+  <div class="ten columns projects">
+    <div class="inside">
+      <h3>our projects:</h3>
+      <div class="project">
+        <h2>The Olympia News Lab</h2>
+        <p>A collection of news sites for Olympia, WA, including:</p>
+        <ul>
+          <li><strong>OlyWiki.org:</strong> a community authored wiki for Olympia and Thurston County.</li>
+          <li><strong>OlyNews.org:</strong> a blog for Olympia and Thurston County.</li>
+        </ul>
+      </div>  
+      <div class="project">
+        <h2>Makers of the Pacific Northwest</h2>
+      </div> 
+      <div class="project">
+        <h2>Moss Blog on Tumblr</h2>
+      </div> 
+      <div id="about">
+        <h5>about moss public press:</h5>
+        <p><strong>The goals:</strong> make an awesome blog, experiment with apps that focus on telling stories, release compilations of our work as ebooks and print books, and work to build a community that encourages and supports curiousity and skepticism.</p>
+        <h4>get involved:</h4>
+        <p>Interested in joining up with Moss Public Press as a contributor? Let us know.</p>
+
+        <h4>support our efforts:</h4>
+        <p>We’re currently defining the marketing & outreach services we’ll offer in conjunction with our publication. We’d be excited to talk with you about how we can help with your outreach campaigns.</p>
+      </div>
+    </div>
   </div>
+  <div class="six columns">
+    <div class="inside">
+      <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 5,
+        interval: 30000,
+        width: 'auto',
+        height: 300,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#8f8f8f'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#8c8c8c',
+            links: '#7990bd'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: true,
+          behavior: 'all'
+        }
+      }).render().setUser('mosspublicpress').start();
+      </script>
+      <div class="clearfix" style="margin-bottom:50px;"></div>
+    
+      <h2 style="margin-top:40px;">Tell us everything.</h2>
+      <p>Talk to us. Tell us everything we need to know.</p>
+      <form action="/" method="post" id="contact" class="center-box">
+        <label for="name">Your Name:</label>
+        <input class="text" type="text" name="name">
+        <label for="email">Your email:</label>
+        <input class="text" type="text" name="email">
+        <label  for="to">Your message:</label>
+        <textarea name="message"></textarea>
+        <input class="btn" type="submit" value="Send">
+      </form>
+    </div>  
+  </div>
+</div>
+
+
+<div class="row" style="margin-top:20px;">
   <div class="six columns">
     <h5>You can find us:</h5>
     <ul>
@@ -89,12 +100,3 @@
     </ul>
   </div>
 </div>
-
-<ul class="inline">
-  <li><a href="http://mosspublicpress.tumblr.com" target="blank">blog</a></li>
-  <li><a href="http://wiki.mosspublicpress.com" target="blank">wiki</a></li>
-  <li><a href="#about">about</a></li>
-</ul>
-
-<h4 class="goudy">news. storytelling. community. technology.</h4>
-<h2>Moss Public Press.</h2>
